@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/pollesche02/constructorwordguess#readme",
   "dependencies": {
+    "colors": "^1.4.0",
     "inquirer": "^7.1.0",
     "prompt": "^1.0.0"
   }
