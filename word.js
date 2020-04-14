@@ -12,15 +12,19 @@ function Word(answer) {
     this.log = function () {
         answerLog = "";
         for (var i = 0; i < this.objArray.length; i++) {
-            answerLog += this.objArray[i] + " ";
+            answerLog += this.objArray[i] .getCharacter(this.objArray[i].letter)
         }
         console.log(answerLog + "/n");
+        return answerLog
     }
 
-    this.userGuess = function () {
+    this.userGuess = function (input) {
+        console.log("input:", input)
         for (var i = 0; i < this.objArray.length; i++) {
-            this.objArray[i].guess(input);
+            this.objArray[i].checkLetter(input)
+         
         }
+
     }
 }
 

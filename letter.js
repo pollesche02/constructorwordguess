@@ -11,8 +11,10 @@ function Letter(letter) {
     }
 
     this.checkLetter = function(guess) {
+    //    console.log("guess", guess, this.letter)
         if(guess === this.letter) {
             this.guessed = true;
+       
         }
     }
 }
