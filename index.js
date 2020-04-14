@@ -5,13 +5,14 @@ var inquirer = require("inquirer");
 var letterArray = "abcdefghijklmnopqrstuvwxyz";
 
 //different words that people can guess from
-var Flowers = ["Sunflower", "Jasmine", "Iris", "Lily", "Rose", "Daisey"];
+var Flowers = ["sunflower", "lilac", "iris", "lily", "rose", "daisey"];
 
 var randomIndex = Math.floor(Math.random() * Flowers.length);
 var randomWord = Flowers[randomIndex];
 
 computerWord = new Word(randomWord);
 
+var requireNewWord = false;
 //Now I need to show all the guessed words
 var incorrectLetters = [];
 var correctLetters = [];
