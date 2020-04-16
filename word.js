@@ -14,7 +14,7 @@ function Word(answer) {
         for (var i = 0; i < this.objArray.length; i++) {
             answerLog += this.objArray[i] .getCharacter(this.objArray[i].letter)
         }
-        console.log(answerLog + "/n");
+        console.log(answerLog + "\n");
         return answerLog
     }
 
