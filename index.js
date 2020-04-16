@@ -11,7 +11,7 @@ var randomIndex = Math.floor(Math.random() * Flowers.length);
 var randomWord = Flowers[randomIndex];
 
 computerWord = new Word(randomWord);
-console.log("word", computerWord);
+// console.log("word", computerWord);
 
 var wordtoshow = computerWord.log();
 console.log("wordtoshow", wordtoshow.split(""));
